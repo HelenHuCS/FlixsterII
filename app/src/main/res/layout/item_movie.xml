@@ -7,17 +7,20 @@
 
     <ImageView
         android:id="@+id/imageView"
+        android:transitionName="imageView"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
         android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvTitle"
+        android:transitionName="title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="The boss baby: Family BUsinessfsfds"
@@ -34,6 +37,7 @@
 
     <TextView
         android:id="@+id/tvOverview"
+        android:transitionName="overview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="text view dsafdsafdsa fdsafdsafdsafdsafdsafdsafdsav fdsa fdsa fdsa fdsa fdsa"

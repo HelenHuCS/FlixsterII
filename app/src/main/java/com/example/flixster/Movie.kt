@@ -1,9 +1,13 @@
 package com.example.flixster
 
+import android.os.Parcelable
 import android.util.Log
+import kotlinx.parcelize.IgnoredOnParcel
 import org.json.JSONException
 import org.json.JSONObject
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class Movie(
     val movieId:Int,
     private val posterPath:String,
@@ -11,8 +15,10 @@ data class Movie(
     val vote: Double,
     val title:String,
     val overview:String,
-){
+) : Parcelable {
+    @IgnoredOnParcel
     val posterUrl = "http://image.tmdb.org/t/p/w342$posterPath"
+    @IgnoredOnParcel
     val backdropPosterUrl = "http://image.tmdb.org/t/p/original$backdropPath"
 
 

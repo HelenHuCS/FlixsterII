@@ -103,9 +103,11 @@ class MovieAdapter(private val activity: MainActivity,private val movies:List<Mo
 
         override fun onClick(v: View?) {
             val movie = movies[adapterPosition]
+            // intent: sending msg through objects
             val intent = Intent(activity,DetailActivity::class.java)
             intent.putExtra("movie_title",movie.title)
             intent.putExtra(MOVIE_EXTRA,movie)
+            // jump from the one screen to another
             val p1 = Pair<View,String>(tvTitle,"title")
             val p2 = Pair<View,String>(tvOverview,"overview")
             val p3 = Pair<View,String>(ivPoster,"imageView")

@@ -18,9 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Flixster"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
